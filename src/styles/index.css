@@ -1,0 +1,29 @@
+::selection {
+  background: rgba(172, 148, 250, 0.2);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn::after {
+  --gradient-from-color: #d6bcfa;
+  --gradient-to-color: #b794f4;
+  --gradient-color-stops: var(--gradient-from-color),
+    var(--gradient-to-color, rgba(202, 191, 253, 0));
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gradient-color-stops)
+  );
+  transition: all 0.4s;
+}

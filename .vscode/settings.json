@@ -1,0 +1,15 @@
+{
+  // These are all my auto-save configs
+  "editor.formatOnSave": true,
+  // tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tslint.enable": false
+}

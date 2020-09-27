@@ -1,5 +1,5 @@
 {
-  "name": "napp",
+  "name": "nextjs-framer-motion-page-transition",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/ui": "^0.6.2",
+    "framer-motion": "^2.7.5",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.8.10"
   }
 }
