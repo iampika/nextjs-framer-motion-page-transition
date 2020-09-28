@@ -93,7 +93,7 @@ function LoremIpsum() {
           { bg: 'bg-blue-400' },
           { bg: 'bg-indigo-400' },
           { bg: 'bg-purple-400' },
-        ].map(({ bg, i }) => (
+        ].map(({ bg }, i) => (
           <div
             key={i}
             className={`p-10 text-xl rounded shadow ${bg}`}
