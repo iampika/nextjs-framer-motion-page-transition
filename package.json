@@ -1,16 +1,15 @@
 {
-  "name": "nextjs-framer-motion-page-transition",
+  "name": "napp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/ui": "^0.6.2",
     "framer-motion": "^2.7.5",
-    "next": "9.5.3",
+    "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },

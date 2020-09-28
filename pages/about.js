@@ -40,11 +40,11 @@ const backVariants = {
   },
 }
 
-const Awesome = () => {
+const About = () => {
   return (
-    <motion.div variants={pageVariants} className="h-screen">
+    <motion.div variants={pageVariants}>
       <Head>
-        <title>My Awesome Project</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
         <meta
@@ -53,30 +53,28 @@ const Awesome = () => {
         />
         <meta name="description" content="Slack CLone" />
       </Head>
-      <div className="h-screen text-white">
-        <motion.div className="h-4/5 bg-pink-500 flex flex-col items-center justify-center text-center">
-          <Link href="/">
-            <motion.a
-              variants={backVariants}
-              className="fixed top-0 right-0 m-10 text-xl md:text-4xl cursor-pointer"
-            >
-              <span>←</span>
-              Back
-            </motion.a>
-          </Link>
-          <div className="md:w-2/5 px-2">
-            <h1 className="text-3xl mb-2 md:text-6xl font-bold">
-              My Awesome Project
-            </h1>
-            <p className="text-sm md:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Quibusdam dignissimos consectetur, ea ratione
-              assumenda soluta laudantium
-            </p>
-          </div>
-        </motion.div>
-        <LoremIpsum />
+      <div className="h-screen bg-pink-500 text-pink-100 flex flex-col items-center justify-center text-center">
+        <Link href="/">
+          <motion.a
+            variants={backVariants}
+            className="fixed top-0 right-0 m-10 text-xl md:text-4xl cursor-pointer flex"
+          >
+            ←Back
+          </motion.a>
+        </Link>
+        <div className="md:w-2/5 px-2">
+          <h1 className="text-3xl md:text-6xl font-bold">
+            Lorem Ipsum
+          </h1>
+          <p className="text-sm md:text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Id, mollitia itaque quaerat pariatur laboriosam
+            deserunt repellendus vero quam necessitatibus
+            nostrum.
+          </p>
+        </div>
       </div>
+      <LoremIpsum />
     </motion.div>
   )
 }
@@ -85,7 +83,7 @@ function LoremIpsum() {
   const lorem =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, et minus tempora dolores aut id quas est saepe sint odio, rerum eos aperiam, modi vitae tenetur praesentium. Asperiores, expedita maxime.'
   return (
-    <div className="py-10 bg-gradient-to-bl from-white to-yellow-50 bg-cover bg-fixed bg-no-repeat bg-100-50">
+    <div className="py-10 text-white">
       <div className="md:w-8/12 mx-auto space-y-8">
         {[
           { bg: 'bg-pink-400' },
@@ -106,4 +104,4 @@ function LoremIpsum() {
   )
 }
 
-export default Awesome
+export default About
